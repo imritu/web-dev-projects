@@ -19,6 +19,12 @@ body {
     text-align: center;
 }
 
+.intro{
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
 .title h1 {
 
     display: inline;
@@ -42,7 +48,6 @@ h2 {
     background-color: #0b11478e;
     padding: 10px;
     margin-bottom: 30px;
-
     color: #75cf40;
     font-size: 30px;
     font-weight: 430;
@@ -50,7 +55,6 @@ h2 {
     border-radius: 10px;
     backdrop-filter: blur(15px);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-
     transition: 0.8s;
 
 }
@@ -165,12 +169,6 @@ h1:hover {
     font-size: 24px;
 }
 
-.intro{
-
-    text-align: center;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
 
 /*Developer team*/
 
