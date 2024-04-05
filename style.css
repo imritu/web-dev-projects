@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 10px;
+    min-height: 100vh;
+    background: #cbc9e8;
+
+}
+
+.wrapper .title {
+    text-emphasis: none;
+    text-align: center;
+}
+
+.title h1 {
+
+    display: inline;
+    background-color: #062639;
+    padding: 20px;
+    color: #fbf3f2;
+    font-size: 4    0px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    word-spacing: 5px;
+    border: 1px solid rgba(18, 253, 233, 0.767);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.9);
+    word-wrap: break-word;
+    transition: 0.8s;
+    border-radius: 30%;
+}
+
+h2 {
+
+    background-color: #0b11478e;
+    padding: 10px;
+    margin-bottom: 30px;
+
+    color: #75cf40;
+    font-size: 30px;
+    font-weight: 430;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+
+    transition: 0.8s;
+
+}
+
+h1:hover {
+    background-color: #154855;
+    Font-size: 55px;
+    color: rgb(180, 219, 117);
+}
+
+.wrapper .card_Container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    background-color: #FF8E8F;
+}
+
+.card_Container .card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    margin: 0 60px 60px 60px;
+
+    overflow: hidden;
+    /* box-shadow: 0 30px 30px -20px rgba(0, 0, 0, .6),
+        inset 0 0 0 1000px rgb(255, 0, 0); */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .imbBx,
+.imbBx img {
+    width: 100%;
+    height: 100%;
+}
+
+.card .content {
+    position: absolute;
+    bottom: -160px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transition: bottom 0.5s;
+    transition-delay: 0.65s;
+}
+
+.card:hover .content {
+    bottom: 0;
+    transition-delay: 0s;
+}
+
+.content .contentBx h3 {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 15px;
+    line-height: 1.1em;
+    transition: 0.5s;
+    transition-delay: 0.6s;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.card:hover .content .contentBx h3 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content .contentBx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.content .sci {
+    position: relative;
+    bottom: 10px;
+    display: flex;
+}
+
+.content .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.2s * var(--i));
+}
+
+.card:hover .content .sci li {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.content .sci li a {
+    color: #fff;
+    font-size: 24px;
+}
+
+.intro{
+
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/*Developer team*/
+
+
+.home {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #db8a7656;
+
+
+}
+
+.home-container {
+    width: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile-card {
+    width: 250px;
+    height: 250px;
+
+    background-color: #4688d4;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: -5px 8px 45px rgba(253, 20, 20, 0.126);
+    transition: all .4s;
+    margin: 30px 40px;
+}
+
+.profile-card:hover {
+    border-radius: 10px;
+    height: 300px;
+}
+
+.profile-card .img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.profile-card:hover .img {
+    border-radius: 20%;
+    /* height: 280px; */
+    transform: translateY(-70px);
+}
+
+.img img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all .4s;
+    z-index: 99;
+    box-shadow: 0 0 22px #3336;
+}
+
+
+.caption {
+    text-align: center;
+    transform: translateY(-70px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s;
+}
+
+.profile-card:hover .caption {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+.caption .social-links i {
+    font-size: 21px;
+    margin: 0 3px;
+    cursor: pointer;
+    color: #333;
+    transition: all .4s;
+}
+
+.caption .social-links i:hover {
+    color: #0b7dff;
+}
+
+
+
+/*sales team*/
+.profile-box {
+    width: 240px;
+    height: 240px;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 10px 10px #062639;
+    padding: 20px;
+    position: relative;
+    transition: background 0.55;
+}
+
+.profile-box img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+.profile-box h3 {
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: #2196f3;
+}
+
+.social-link {
+    background: #2196f3;
+    margin: 50px auto 20px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.social-link .fa {
+    margin: 5%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.profile-box img:hover {
+    width: 200px;
+    height: 200px;
+}
+
+.profile-box:hover {
+    background-color: #2196f3;
+}
+
+.profile-box:hover h3 {
+    color: #fff;
+}
+
+.profile-box:hover small {
+    color: #efefef;
+}
+
+.profile-box:hover .social-link {
+    color: #2196f3;
+    background-color: #fff;
+}
+
+.profile-box:hover .social-link .fa {
+    color: #2196f3;
+}
+
+
+.team-row {
+    width: fit-content;
+    padding: 20px;
+
+}
+
+.lastpage {
+    background-color: #5F374B;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
